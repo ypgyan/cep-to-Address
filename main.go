@@ -2,16 +2,11 @@ package main
 
 import (
     "encoding/csv"
-    "fmt"
     "os"
 )
 
-type Cep struct {
-	CEP string
-}
-
 func main() {
-	file, err := os.Open("ceps.csv")
+	file, err := os.Open("./files/ceps.csv")
     if err != nil {
         panic(err)
     }
@@ -22,12 +17,26 @@ func main() {
         panic(err)
     }
 
-	ceps := make([]Cep, len(records))
-	for k, record := range records {
-		cep := Cep{
-			CEP: record[0],
-		}
-		ceps[k] = cep
+	var cep []string
+
+	for _, record := range records {
+		cep = append(cep, record[0])
 	}
-	fmt.Println(ceps)
+
+	addressesFile, err := os.Create("./files/addresses.csv")
+    if err != nil {
+        panic(err)
+    }
+	defer addressesFile.Close()
+
+	writer := csv.NewWriter(addressesFile)
+	defer writer.Flush()
+
+	ceptowrite := make([][]string, len(cep))
+	for i, c := range cep {
+		ceptowrite[i] = []string{c}
+		if err := writer.Write(ceptowrite[i]); err != nil {
+			panic(err)
+		}
+	}
 }
