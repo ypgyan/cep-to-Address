@@ -1,11 +1,9 @@
-# Cep to Adress
+# Cep para Endereço
 
-Welcome to CEP Geolocator, an innovative project designed to seamlessly extract, process, and locate addresses from CSV files containing CEPs, leveraging the power and accuracy of Google Maps.
+Bem-vindo ao Cep para Endereço, um projeto desenvolvido para extrair, processar e localizar facilmente endereços de arquivos CSV contendo CEPs, aproveitando o poder e a precisão do Google Maps.
 
-Introduction
+Introdução
 
-Ever struggled with a bulk of CEP codes and wondered if there was a simpler, quicker way to locate their corresponding addresses? The CEP Geolocator project aims to solve this exact problem. Our solution accepts CSV files, reads through each CEP, queries Google Maps, and fetches the related address information. 
+Você já lutou com uma grande quantidade de códigos CEP e se perguntou se havia uma maneira mais simples e rápida de localizar os endereços correspondentes? O projeto CEP para endereço visa resolver exatamente esse problema. Essa solução aceita arquivos CSV, lê cada CEP, consulta o Google Maps e busca as informações de endereço relacionadas.
 
-This automates and greatly simplifies the process of mass address lookup from CEPs. The primary features include CSV file reading, seamless interaction with Google Maps, and streamlined address retrieval. Stay tuned for detailed user tutorials and feature updates.
-
-Please replace "Project Name" with the preferred name of your project in the above formats.
+Isso automatiza e simplifica bastante o processo de pesquisa de endereços em massa dos CEPs. Os principais recursos incluem leitura de arquivos CSV, interação com o Google Maps e recuperação simplificada de endereços.
